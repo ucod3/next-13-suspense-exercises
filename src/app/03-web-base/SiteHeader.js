@@ -10,23 +10,9 @@ function SiteHeader() {
         WebBase
       </Link>
       <nav>
-        {/* <ol className='header-nav-links'> */}
         <React.Suspense>
           <NavLinks />
         </React.Suspense>
-        {/* {navLinks.map(
-            ({ slug, label, href, type }) => (
-              <li key={slug}>
-                <Link
-                  href={href}
-                  className={`header-nav-link ${type}`}
-                >
-                  {label}
-                </Link>
-              </li>
-            )
-          )} */}
-        {/* </ol> */}
       </nav>
     </header>
   );
